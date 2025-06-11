@@ -1,0 +1,771 @@
+/* Font Butterfly Kids */
+    .butterfly-kids-regular {
+        font-family: "Butterfly Kids", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Font Bagel */
+    .bagel-fat-one-regular {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+  .fuzzy-bubbles-regular {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+    body, html {
+      position:relative;
+      padding: 0;
+      font-family: monospace;
+      background: url('images/bggrid-transp.png') repeat center;
+      background-color: #fae8ed;
+      scrollbar-color: #f0afcd transparent;
+    }
+
+    .header, .footer {
+      height: 150px;
+      width: 100%;
+      color: transparent;
+    }
+    .header { position: relative; top: 0; }
+    .footer { position: absolute; top: 1390px; height: 200px;}
+
+
+    .wrapper {
+      left: 50%;  
+      transform: translateX(-50%);
+      width: 860px; height: 1210px;
+      border-radius: 30px;
+      background: url('images/wrapperback.png');
+      box-shadow: -10px 10px 4px rgba(0,0,0,0.25);
+      padding: 15px;
+      z-index: 0;
+      position: relative;
+    }
+
+    .main {
+      position: relative;
+      width: 840px; height: 1190px;
+      margin: 0 auto;
+      border: 4px solid #f4bbc9;
+      border-radius: 30px;
+      /* background: #fae8ed; */
+      /* background: hsl(0, 0%, 100%); */
+      background: url("images/green-main-background.jpg") repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(8, 105px);
+      grid-template-rows: repeat(12, 105px);
+    }
+
+    .box {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: visible;
+    }
+
+    #box1 {
+        grid-area: 1 / 1 / 4 / 9;
+    }
+
+    #box2 {
+        grid-area: 4 / 1 / 9 / 7;
+    }
+
+    #box3 {
+        grid-area: 4 / 6 / 7 / 9;
+        z-index: 3;
+    }
+
+    #box4 {
+        grid-area: 7 / 6 / 9 / 9;
+    }
+
+    #box5 {
+        grid-area: 8 / 1 / 12 / 3;
+    }
+
+    #box6 {
+        grid-area: 8 / 2 / 12 / 7;
+    }
+    #box7 {
+        grid-area: 8 / 6 / 12 / 9;
+    }
+
+
+
+    /* Title area */
+    .titlediv {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 200px;
+      background: url("images/bowback2.png");
+      background-size: cover;
+      background-position: center;
+      border-radius: 26px 26px 0 0;
+      z-index: 1;
+    }
+
+    .framediv {
+      position: relative;
+      top: 18px;
+      width: 50%;
+      height: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url("images/lacetitleframe.png") center top / contain no-repeat;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+      text-align: center;
+    }
+    #title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      font-family: "Roboto Mono", cursive;
+      font-size: 25px;
+      color: #703c4a;
+    }
+
+    .navigation {
+    position: absolute;
+    top: 198px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url('images/deer.jpg');
+    background-size: cover;
+    background-position: center; 
+    z-index: 5;
+  }
+
+  #home-image,
+  #projects-image,
+  #hobbies-image,
+  #gallery-image,
+  #misc-image {
+    position: absolute;
+    top: 22px;
+    height: 20px;
+    pointer-events: none;
+    z-index: 6; 
+  }
+
+  #home-image    { left: 200px; }
+  #projects-image{ left: 330px; }
+  #hobbies-image { left: 450px; }
+  #gallery-image { left: 565px; }
+  #misc-image    { left: 685px; }
+
+  .nav-buttons {
+    top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    position: relative; /* create new stacking context */
+    z-index: 5;         /* above the GIFs */
+  }
+
+  .nav-button {
+    all: unset;
+    width: 110px;
+    height: 40px;
+    background-image: url('images/pinknavbutton.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-family: "Fuzzy Bubbles", monospace;
+    font-size: 16px;
+    cursor: pointer;
+    text-indent: 14px;
+    position: relative;
+    z-index: 6;
+  }
+  .nav-button:hover {
+    background-image: url('images/navbutton.png');
+  }
+
+  .lace-divider {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url('images/lacedivider.png') repeat-x;
+    z-index: 0;
+  }
+
+
+  .main-footer{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height:100px;
+    width: 100%;
+    bottom:0;
+    left:0px;
+    z-index: 4;
+  }
+
+  .main-footer-div{
+    position: absolute;
+    background-repeat: repeat-x;
+    background-image: url('images/strawberrydivider.png');
+    height: 80px;
+    width: 100%;
+    bottom:0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+
+  .about-me{
+    padding: 0 0 0 18px;
+    width: 150px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .music-player{
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(244, 47, 139, 0.25);
+    margin: 30px 15px 5px 11px;
+    top: 1%;
+    left: 12%;
+    width: 70%;
+    height: 245px;
+    background-image: url('images/pinkauramusicback.jpg');
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    border-radius: 20px;
+    line-height: 26px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    padding: 8px;
+    font-family: "Roboto Mono", monospace;
+    color: #703c4a;
+  }
+  
+  .music-player:hover{
+    box-shadow: 0px 0px 10px 5px rgba(246, 67, 151, 0.4);
+  }
+
+  .music-name,
+  .artist-name{
+    height: 17px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 1px;
+  }
+
+  .music-name{font-size: 12px;}
+  .artist-name{font-size: 10px;}
+
+  .disk{
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('images/coolwithyou.jpg');
+    background-size: cover;
+    box-shadow: 0 0 0 5px rgba(246, 67, 150, 0.1);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .disk.play{
+    animation-play-state: running;
+  }
+
+  .disk::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background-image: url('images/pinkauramusicback.jpg');
+    background-position: center;
+  }
+
+  .song-slider {
+    position: relative;
+    width: 100%;
+    height: 20px;
+  }
+
+  .seek-bar {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 190px;
+    overflow: hidden;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #eaafc2;
+    cursor: pointer;
+  }
+
+  .seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 15px;
+    background: #153f05;
+    box-shadow: -400px 0 0 400px #885c44;
+  }
+
+  .current-time,
+  .song-duration {
+    position: absolute;
+    margin: none;
+    top: 10px;
+    font-size: 10px;
+  }
+
+  .song-duration{right: 20px;}
+  .current-time{left: 20px;}
+
+  .controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .play-button{
+    position:relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #885c4481;
+    cursor: pointer;
+    border: none;
+  }
+
+  .play-button span{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 18px;
+    border-radius: 1px;
+    background: #885c44;
+    transition: .5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play-button span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+
+.play-button.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-button.pause span:nth-child(1){
+    width: 35%;
+    height: 45%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-button.pause:hover{
+    animation: pulse 1.7s linear infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    25%{
+        box-shadow: 0 0 0 3px rgba(246, 67, 150, 0.1);
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgba(246, 67, 150, 0.3);
+    }
+    75%{
+        box-shadow: 0 0 0 3px rgba(246, 67, 150, 0.1);
+    }
+    100%{
+        box-shadow: 0;
+    }
+}
+
+.btn{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: #885c447a;
+    margin: 10px;
+}
+
+#forwardbutton{
+    position: absolute;
+    height: 20px;
+    left: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+#backbutton{
+    position: absolute;
+    height: 20px;
+    left: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.welcome-intro {
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(244, 47, 139, 0.25);
+    height: 380px;
+    width: 490px;
+    left: 5%;
+    top: 3%;
+    background-image: url("images/welcomememo.jpg");
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    border-radius: 20px;
+    line-height: 23px;
+    font-size: 18px;
+    text-align: center;
+    scrollbar-color: #df8db2 transparent;
+    scrollbar-width: thin;
+    transition-duration: 0.5s;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+.welcome-intro:hover{
+  box-shadow: 0px 0px 10px 5px rgba(246, 67, 150, 0.4);
+}
+
+.welcome-intro-inner{
+    font-family: "Fuzzy Bubbles";
+    font-size: 14px;
+    padding-right: 20px;
+    overflow: auto;
+    margin: 60px 30px 60px 50px;
+    height: 260px;
+    color: #3a2026;
+}
+
+.calicotopper{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  right: 50%;
+  transform: translateX(40%);
+  top: 10%;
+  z-index: 6;
+}
+
+#calicoimg{
+  position: absolute;
+  width: 180px;
+  right: 20px;
+  z-index: 6;
+  bottom: 0px;
+}
+
+#camera {
+    position: relative;
+    width: 265px;
+    height: 150px;
+    left: 16px;
+    background-image: url('images/camera2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 15px 0 0 15px;
+    border-top: 0px;
+    border-right: 0px;
+    rotate: -10deg;
+    font-size: 21px;
+    line-height: 31px;
+    top: 0;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px 0px rgba(244, 47, 139, 0.25);
+    transition-duration: 0.5s;
+    z-index: 5;
+}
+
+#camera:hover{
+  position: relative;
+  cursor: pointer;
+  rotate: 0deg;
+  box-shadow: none;
+}
+
+#camera:hover::after {
+  content: "Me ( °ㅁ°)";
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 7px;
+  height: 18px;
+  background: #f8edf1;
+  color: #634331;
+  border: dashed 2px #9f6371;
+  padding: 0px 4px 10px 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+.camera-image{
+  position: absolute;
+  width: 150px;
+  height: 128px;
+  left: 19px;
+  top: 28px;
+  background-image: url('images/cameraimage.JPG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  z-index: 4;
+}
+
+.kumapic{
+  position: absolute;
+  background-image: url('images/layingkuma.png');
+  background-position: center;
+  background-size: contain;
+  height: 70px;
+  width: 80px;
+  right: 50px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+
+.currently{
+  position: absolute;
+  height: 260px;
+  width: 290px;
+  left: 50%;
+  margin-top: 6%;
+  transform: translateX(-50%);
+  background-image: url("images/currentlyback.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  line-height: 23px;
+  font-size: 18px;
+  scrollbar-color: #df8db2 transparent;
+  scrollbar-width: thin;
+  transition-duration: 0.5s;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 5px rgba(246, 67, 150, 0.2);
+}
+
+.currently:hover{
+  box-shadow: 0px 0px 10px 5px rgba(246, 67, 150, 0.4);
+}
+
+.currently-inner{
+    align-items: center;
+    text-align: left;
+    font-family: "Fuzzy Bubbles";
+    line-height: 16px;
+    padding-right: 20px;
+    overflow: auto;
+    margin: 10px;
+    height: 230px;
+    color: #3a2026;
+}
+
+.span.title {
+    display: flex;
+    font-family: "Fuzzy Bubbles";
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 3px;
+    text-shadow: 1px 1px 0px white, -1px -1px 0px white;
+    transition-duration: 0.6s;
+  }
+
+
+span.title {
+	display: block; 
+	width: 100%; 
+	font-family: "Fuzzy Bubbles";
+	margin: 10px;
+	font-size: 14px;
+	line-height: 1px; 
+	transition-duration: 0.6s;
+	padding: 2px 10px;
+	box-sizing: border-box;
+}
+
+
+p:nth-of-type(4n + 1) span.title:first-child {
+	background: rgb(246, 241, 147);
+}
+
+p:nth-of-type(4n + 2) span.title:first-child {
+	background: rgb(249, 184, 215);
+}
+
+p:nth-of-type(4n + 3) span.title:first-child {
+	background: #c2e2ea;
+}
+
+p:nth-of-type(4n + 4) span.title:first-child {
+	background: #c2eacd;
+}
+
+p:hover span.title::before {
+  font-weight: bold;
+  cursor:auto;
+	content: "⤏";
+}
+
+.updates{
+  font-family: "Fuzzy Bubbles";
+  position: relative;
+  background-image: url('images/updatesbackground.jpg');  
+  background-position: center;
+  background-size: cover;
+  height: 210px;
+  margin: 110px 15px 5px 5px;
+  padding: 10px 5px 20px 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  scrollbar-color: #df8db2 transparent;
+  scrollbar-width: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition-duration:  0.5s;
+  box-shadow: 0px 0px 10px 5px rgba(246, 67, 150, 0.2);
+}
+
+.updates-inner{
+    align-items: center;
+    text-align: left;
+    font-family: "Fuzzy Bubbles";
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 5px 0 15px;
+    margin: 5px;
+    height: 90%;
+    width: 85%;
+    color: #3a2026;
+    overflow: auto;
+}
+
+.updates:hover{
+  box-shadow: 0px 0px 10px 5px rgba(246, 67, 150, 0.4);
+}
+
+.currently-content{margin-left: 15%; font-size: 12px;}
+
+.updates-content{font-size: 12px; line-height: 13px;}
+
+span.updates-headers {
+  font-family: "Fuzzy Bubbles";
+	display: block; 
+	width: 100%; 
+	font-family: "Fuzzy Bubbles";
+	font-size: 12px;
+	line-height: 1px; 
+	transition-duration: 0.6s;
+	/* padding: 2px 10px; */
+	box-sizing: border-box;
+}
+
+h3:hover span.updates-headers::before {
+  font-family: "Fuzzy Bubbles Bold";
+	content: "🌸";
+}
+
+.social-buttons{
+  all: unset;
+  background-size: contain;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin-top: 10%;
+  margin-left: 20%;
+  width: 70%;
+  height: 60px;
+}
+
+#linkedin{
+  all: unset;
+  background-size: cover;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: url("images/linkedin.png");
+  z-index: 6;
+}
+
+#git{
+  all: unset;
+  background-size: cover;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: url("images/git.png");
+  z-index: 6;
+}

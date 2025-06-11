@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>myaxd</title>
+    <meta name="author" content="Mya A" />
+    <meta name="description" content="myaxd website homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Add icon to website title-->
+    <link rel="icon" href="images/kuma.png" type="image/x-icon" />
+    <link rel="stylesheet" href="indexstyle.css" type="text/css" />
+    <link rel="stylesheet" href="indexmobilestyle.css" type="text/css" /> 
+    <!--Fonts-->
+    <!--Roboto Mono-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!--Dynapuff-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <audio src="" id="audio"></audio>
+
+  <img id="floating-image" src="images/kuma.png"
+       style="position: fixed; pointer-events: none; width: 30px; z-index:9999;"></img>
+  
+  <div class="header"></div>
+  <div class="wrapper">
+
+
+    <div class="main">
+        <div id="box1" class="box">
+        
+            <div class="titlediv">
+                <div class="framediv">
+                    <h1 id="title">Mya's Page</h1>
+                </div>
+            </div>
+            <div class="navigation">
+                <img id="home-image"    src="images/girl.gif" />
+                <img id="projects-image"src="images/eevee.gif" />
+                <img id="hobbies-image" src="images/kuma.gif" />
+                <img id="gallery-image" src="images/greenkitty.gif" />
+                <img id="misc-image"    src="images/spinningmiffy.gif" />
+
+                <div class="nav-buttons">
+                <button class="nav-button" onclick="location.href='index.html'">Home</button>
+                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
+                <button class="nav-button" onclick="location.href='hobbies.html'">Hobbies</button>
+                <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
+                <button class="nav-button" onclick="location.href='journal.html'">Journal</button>
+                </div>
+
+                <div class="lace-divider"></div>
+            </div>
+        </div>
+
+        <div id="box2" class="box">
+            <div class="welcome-intro">
+            <div class="welcome-intro-inner">
+              <h2>⋆⭒˚.⋆ Welcome! ⋆⭒˚.⋆</h2>
+              <p>My name is <b>Mya</b>, <br> the owner of <u>myaxd.neocities.com</u>! <br> ≽^• ˕ • ྀི≼ <br>
+                This website is a portfolio for my hobbies, likes, and projects.
+                 I decided to pick up html/css/java with a couple friends as a challenge to
+                learn something new, and showcase things about my life. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="box3" class="box">
+            <div class="calicotopper">
+              <img id = "calicoimg" src = "images/calicobanner.gif">
+            </div>
+            <div class="music-player">
+               <h1 class="music-name">song one</h1>
+               <p class="artist-name">artist</p>
+
+               <div class="disk">
+               </div>
+
+                <div class="song-slider">
+                    <input class="seek-bar" type="range" value="0">
+                    <span class="current-time">00:00</span>
+                    <span class="song-duration">00:00</span>
+                </div>
+                
+                <div class="controls">
+                    <button class="btn backwardbutton"><img id="backbutton" src="images/backbutton.png" alt=""></button>
+                    <button class="play-button pause">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn forwardbutton"><img id="forwardbutton" src="images/forwardbutton.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="box4" class="box">
+            <aside id="camera">
+              <div class="camera-image"></div>
+            </aside>
+            <div class="kumapic"></div>
+        </div>
+
+        <div id="box5" class="box">
+            <div class="about-me">
+                <p style="font-family: Bagel Fat One; line-height: 90%;">about me: </p>
+                <p>bday: 5.15, Senior earning B.S. in Computer Engineering, married, adopted, introverted</p>
+                <p style="font-family: Bagel Fat One; line-height: 90%">likes: </p>
+                <p>coffee, green, pink, cars, crochet, crafts, cats, dachshunds, figure skating, watermelon, New Jeans, food</p>
+            </div>
+
+            <div class="social-buttons">
+                <button id="git" onclick="window.open('https://github.com/and10012/myaxd', '_blank')"></button>
+                <button id="linkedin" onclick="window.open('https://www.linkedin.com/in/myaanderson', '_blank')"></button>
+            </div>
+        </div>
+
+        <div id="box6" class="box">
+            <div class = "currently">
+                <div class="currently-inner">
+                  <h1 style="font-size: 17px; line-height: 10px; text-align: center;"><u>Currently..</u></h1>
+                  <p><span class="title">Feeling:</span></p>
+                    <p class="currently-content">Good🍓</p>
+                  <p><span class="title">Watching:</span></p>
+                    <p class="currently-content">When Life Gives You Tangerines, Ginny and Georgia</p>
+                  <p><span class="title">Listening to:</span></p>
+                    <p class="currently-content">Gnarly 🥪</p>
+                  <p><span class="title">Working on:</span></p>
+                    <p class="currently-content">Crochet steering wheel cover</p>
+                </div>
+              </div>
+        </div>
+
+        <div id="box7" class="box">
+            <div class="updates">
+              <div class="updates-inner">
+                <h2 style="font-size: 14px; text-align: center;">⋆✩ Updates: ✩⋆</h2>
+                <h3><span class="updates-headers"><u>6.9.2025</u></span></h3>
+                  <p class="updates-content">home page: changed layout and color theme, started skating lessons</p>
+                <h3><span class="updates-headers"><u>5.27.2025</u></span></h3>
+                  <p class="updates-content">home page: almost finished! working at internship :D</p>
+                <h3><span class="updates-headers"><u>5.19.2025</u></span></h3>
+                  <p class="updates-content"> site created</p>
+              </div>
+            </div>
+        </div>
+
+      <div class="main-footer">
+        <div class="main-footer-div"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer"></div>
+
+  <script src ="cursor.js"></script>
+  <script src = "musicdata.js"></script>
+  <script src = "music.js"></script>
+
+</body>
+</html>
