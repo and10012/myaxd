@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="scroll.js"></script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>myaxd-projects</title>
+    <title>myaxd-hobbies</title>
     <meta name="author" content="Mya A" />
-    <meta name="description" content="myaxd website projects" />
+    <meta name="description" content="myaxd website hobbies" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--Add icon to website title-->
@@ -18,75 +19,91 @@
     <!--Dynapuff-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
+  <audio src="" id="audio"></audio>
+  <script src="tabs.js" defer></script>
+
   <img id="floating-image" src="images/pinkkuma.png"
        style="position: fixed; pointer-events: none; width: 30px; z-index:9999;"></img>
   
   <div class="header"></div>
-  <div class="wrapper">
-
-
-    <div class="main">
-        <div id="box1" class="box">
+      <div class="wrapper">
+          <div class="tab-container">
+            <ul class="tabs">
+              <li class="active tab" data-tab-target="#cars"><p>Cars</p></li>
+              <li class="tab" data-tab-target="#figure-skating"><p>Figure Skating</p></li>
+              <li class="tab" data-tab-target="#crafts"><p>Crafts</p></li>
+              <li class="tab" data-tab-target="#media"><p>Media</p></li>
+            </ul>
+            <aside class="hearts">❤︎ ❤︎ ❤︎</aside>
+          </div>
         
-            <div class="titlediv">
-                <div class="framediv">
-                    <h1 id="title">Hobbies</h1>
-                </div>
-            </div>
-            <div class="navigation">
-                <img id="home-image"    src="images/girl.gif" />
-                <img id="projects-image"src="images/eevee.gif" />
-                <img id="hobbies-image" src="images/kuma.gif" />
-                <img id="gallery-image" src="images/greenkitty.gif" />
-                <img id="misc-image"    src="images/spinningmiffy.gif" />
-
-                <div class="nav-buttons">
+          <div class="navigation-bar">
+            <div class="nav-buttons">
                 <button class="nav-button" onclick="location.href='index.html'">Home</button>
-                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
                 <button class="nav-button" onclick="location.href='hobbies.html'">Hobbies</button>
                 <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
+                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
                 <button class="nav-button" onclick="location.href='journal.html'">Journal</button>
-                </div>
-
-                <div class="lace-divider"></div>
             </div>
-        </div>
+          </div>
 
-        <div id="box2" class="box">
-            
-        </div>
+          <div id= "song-bar" class="navigation-bar">
+              <div class="controls">
+                    <button class="btn backwardbutton"><img id="backbutton" src="images/backbutton.png" alt=""></button>
+                    <button class="play-button pause">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn forwardbutton"><img id="forwardbutton" src="images/forwardbutton.png" alt=""></button>
+                </div>
+              <div class="song-slider">
+                <input class="seek-bar" type="range" value="0">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+              </div>  
+              <div class="marquee">
+                <div class="marquee-content" id="marquee-content">
+                  <p class="music-name">song</p>
+                  <p>•</p>
+                  <p class="artist-name">artist name</p>
+                  <p>•</p>
+                </div>
+              </div>
+          </div>
 
-        <div id="box3" class="box">
-            
-        </div>
 
-        <div id="box4" class="box">
-            
-        </div>
+          <div class="hobbies-wrapper">
 
-        <div id="box5" class="box">
-           
-        </div>
+            <div class="hobbies-sidebar">
+              <img id="hobbyimg" src="images/hobbyimg.jpg">
+            </div>
 
-        <div id="box6" class="box">
-            
-        </div>
 
-        <div id="box7" class="box">
-           
-        </div>
+            <div class="hobbies-content">
+              <div id="cars" data-tab-content class="active">
+                <p>This is the car</p>
+              </div>
 
-      <div class="main-footer">
-        <div class="main-footer-div"></div>
-      </div>
-    </div>
+              <div id="figure-skating" data-tab-content>
+                <p>Some </p>
+              </div>
 
-  </div>
+              <div id="crafts" data-tab-content>
+                <p>content</p>
+              </div>
+
+              <div id="media" data-tab-content>
+                <p>Some content</p>
+              </div>
+            </div>
+
+          </div>
+          </div>
 
   <div class="footer"></div>
 

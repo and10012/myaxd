@@ -163,11 +163,11 @@
   }
 
   #home-image    { left: 200px; }
-  #projects-image{ left: 330px; }
-  #hobbies-image { left: 450px; }
-  #gallery-image { left: 565px; }
+  #hobbies-image{ left: 325px; }
+  #gallery-image { left: 440px; }
+  #projects-image { left: 570px; }
   #misc-image    { left: 685px; }
-
+  
   .nav-buttons {
     top: 2px;
     display: flex;

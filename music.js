@@ -11,17 +11,34 @@
     const playBtn = document.querySelector('.play-button');
     const forwardBtn = document.querySelector('.forwardbutton');
     const backwardBtn = document.querySelector('.backwardbutton');
+    const marquee = document.getElementById("marquee-content");
+    const marqueeContent = document.querySelector('.marquee-content');
 
-    playBtn.addEventListener('click', () =>{
-        if(playBtn.className.includes('pause')){
+    function updateSongText(song, artist) {
+
+        const entry = `
+            <p class="music-name">${song}</p>
+            <p>•</p>
+            <p class="artist-name">${artist}</p>
+            <p>•</p>
+        `;
+
+        marquee.innerHTML = entry.repeat(100);
+    }
+
+    playBtn.addEventListener('click', () => {
+        const marqueeContent = document.querySelector('.marquee-content');
+        if (playBtn.className.includes('pause')) {
             music.play();
-        }
-        else{
+            if (marqueeContent) marqueeContent.classList.add('play');
+        } else {
             music.pause();
+            if (marqueeContent) marqueeContent.classList.remove('play');
         }
         playBtn.classList.toggle('pause');
-        disk.classList.toggle('play');
-    })
+        if (disk) disk.classList.toggle('play');
+    });
+
     
 
     const setMusic = (i) => {
@@ -32,15 +49,17 @@
 
         songName.innerHTML = song.name;
         artistName.innerHTML = song.artist;
-        disk.style.backgroundImage = `url('${song.cover}')`;
-
+        if (disk) disk.style.backgroundImage = `url('${song.cover}')`;
         currentTime.innerHTML = '00:00';
 
+        if (marquee) updateSongText(song.name, song.artist);
+        
         music.onloadedmetadata = () => {
             seekBar.max = music.duration;
             musicDuration.innerHTML = formatTime(music.duration);
         };
-    }
+    };
+
 
     setMusic(0);
 
@@ -78,8 +97,11 @@
     const playMusic = () => {
         music.play();
         playBtn.classList.remove('pause');
-        disk.classList.add('play');
+        if (disk) disk.classList.add('play');
+        const marqueeContent = document.querySelector('.marquee-content');
+        if (marqueeContent) marqueeContent.classList.add('play');
     }
+
 
     // forward and backward buttons
 

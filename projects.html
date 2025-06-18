@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>myaxd-projects</title>
-    <meta name="author" content="Mya A" />
-    <meta name="description" content="myaxd website projects" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="scroll.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>myaxd-projects</title>
+  <meta name="author" content="Mya A" />
+  <meta name="description" content="myaxd website projects" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Add icon to website title-->
-    <link rel="icon" href="images/pinkkuma.png" type="image/x-icon" />
-    <link rel="stylesheet" href="projectsstyle.css" type="text/css" />
-    <link rel="stylesheet" href="projectsmobilestyle.css" type="text/css" /> 
-    <!--Fonts-->
-    <!--Roboto Mono-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <!--Dynapuff-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap" rel="stylesheet">
+  <!--Add icon to website title-->
+  <link rel="icon" href="images/pocchao.png" type="image/x-icon" />
+  <link rel="stylesheet" href="projectsstyle.css" type="text/css" />
+  <link rel="stylesheet" href="projectsmobilestyle.css" type="text/css" /> 
+  <!--Fonts-->
+  <!--Roboto Mono-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!--Dynapuff-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-  <img id="floating-image" src="images/pinkkuma.png"
+
+  <img id="floating-image" src="images/pocchao.png"
        style="position: fixed; pointer-events: none; width: 30px; z-index:9999;"></img>
   
   <div class="header"></div>
@@ -47,38 +49,113 @@
 
                 <div class="nav-buttons">
                 <button class="nav-button" onclick="location.href='index.html'">Home</button>
-                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
                 <button class="nav-button" onclick="location.href='hobbies.html'">Hobbies</button>
                 <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
+                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
                 <button class="nav-button" onclick="location.href='journal.html'">Journal</button>
                 </div>
-
+                
                 <div class="lace-divider"></div>
             </div>
         </div>
 
-        <div id="box2" class="box">
-            
-        </div>
+        <div id="main-inner" class="box">
 
-        <div id="box3" class="box">
-            
-        </div>
+          <div class="description">
+            <p style="font-family: 'Lexend Giga'; margin-top: 0%;">
+              Aside from this webiste, these are some projects of mine--whether they be from work, school, or personal, I wanted to have a place to showcase them!
+            </p>
+          </div>
 
-        <div id="box4" class="box">
-            
-        </div>
+          <div class="project-section">
+            <div id="pimage1" class="project-image"></div>
+            <div class="image-description">
+              <p>Final weight scale project and PCB circuit</p>
+            </div>
+            <div class="project-title">
+              <p id ="ptitle">Strain Gauge Weight Scale</p>
+            </div>
+            <div class="project-content">
+              <p><u>Jan - May 2025 </u>- This group project was completed for my Junior Design class. 
+                The scope was to build a small weight scale to display the weight, in grams, to the nearest 
+                gram from 0g-1000g. The required harware included: Minimum 10-bit ADC, Strain gauge, 
+                Instrumentation Amplifier, PIC24 MCU, and an LCD. <br><br> Contributions: 
+                 <ul>
+                  <li>Chose hardware for ADC and instrumentation amplifier.</li>
+                  <li>Helped set up, test, and designed the analog front end circuit.</li>
+                  <li>Coded the software in <em>C</em> to implement the ADC, LCD and Microcontroller interface</li>
+                </ul>
+              </p>
+            </div>
+          </div>
 
-        <div id="box5" class="box">
-           
-        </div>
+          <div class="project-section">
+            <div id="pimage2" class="project-image"></div>
+            <div class="image-description">
+              <p>An x-ray CT scan of a lego Nissan GTR that I took</p>
+            </div>
+            <div class="project-title">
+              <p id ="ptitle">X-Ray MPE/Metrology</p>
+            </div>
+            <div class="project-content">
+              <p><u>May - August 2024 </u> <br><i>Electrical Engineering Intern </i><br> Goal to characterize measurement error on x-ray machines <br><br> Contributions: <br>
+                 <ul>
+                  <li>Researched and identified key factors in CT scan measurement variations, enhancing geometry scan consistency.</li>
+                  <li>Conducted 2-Factor DOE on object positioning and CT settings, confirming both significantly impact scan accuracy.</li>
+                  <li>
+                    Built an advanced Excel tool with PowerBI which managed over 2,000 measurements across multiple X-ray CT and DR machines.
+                  </li>
+                </ul>
+            </div>
+          </div>
 
-        <div id="box6" class="box">
-            
-        </div>
+          <div class="project-section">
+            <div id="pimage3" class="project-image"></div>
+            <div class="image-description">
+              <p>The final night light configuration :D</p>
+            </div>
+            <div class="project-title">
+              <p id ="ptitle">LED Lullaby Night Light</p>
+            </div>
+            <div class="project-content">
+              <p><u>May 2024 </u>- This group project was completed for my Microcontrollers class. 
+                We created a night light that changed colors and played music based on ambient light readings.
+                <br><br> Contributions: <br>
+                 <ul>
+                  <li>Coded libraries and configuration for a piezo buzzer, enabling playback of 8 songs with precise pitch control (30Hz to 5000Hz) using
+                      PWM and timers.</li>
+                  <li>Designed and integrated circuitry for the buzzer, LEDs, and light sensor, collaborating with team members for seamless
+                      system interaction.
+                  </li>
+            </div>
+          </div>
 
-        <div id="box7" class="box">
-           
+          <!-- to be completed -->
+          <!-- <div class="project-section">
+            <div id="pimage4" class="project-image"></div>
+            <div class="project-title">
+              <p id ="ptitle">title</p>
+            </div>
+            <div class="project-content">
+            </div>
+          </div>
+
+          <div class="project-section">
+            <div id="pimage5" class="project-image"></div>
+            <div class="project-title">
+              <p id ="ptitle">title</p>
+            </div>
+            <div class="project-content"></div>
+          </div>
+
+          <div class="project-section">
+            <div id="pimage6" class="project-image"></div>
+            <div class="project-title">
+              <p id ="ptitle">title</p>
+            </div>
+            <div class="project-content"></div>
+          </div> -->
+
         </div>
 
       <div class="main-footer">
@@ -93,6 +170,7 @@
   <script src ="cursor.js"></script>
   <script src = "musicdata.js"></script>
   <script src = "music.js"></script>
+  <script src="scroll.js"></script>
 
 </body>
 </html>

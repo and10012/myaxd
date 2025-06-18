@@ -77,31 +77,6 @@
         grid-area: 1 / 1 / 4 / 9;
     }
 
-    #box2 {
-        grid-area: 4 / 1 / 9 / 7;
-    }
-
-    #box3 {
-        grid-area: 4 / 6 / 7 / 9;
-        z-index: 3;
-    }
-
-    #box4 {
-        grid-area: 7 / 6 / 9 / 9;
-    }
-
-    #box5 {
-        grid-area: 8 / 1 / 12 / 3;
-    }
-
-    #box6 {
-        grid-area: 8 / 2 / 12 / 7;
-    }
-    #box7 {
-        grid-area: 8 / 6 / 12 / 9;
-    }
-
-
 
     /* Title area */
     .titlediv {
@@ -163,9 +138,9 @@
   }
 
   #home-image    { left: 200px; }
-  #projects-image{ left: 330px; }
-  #hobbies-image { left: 450px; }
-  #gallery-image { left: 565px; }
+  #hobbies-image{ left: 325px; }
+  #gallery-image { left: 440px; }
+  #projects-image { left: 570px; }
   #misc-image    { left: 685px; }
 
   .nav-buttons {
