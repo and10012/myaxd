@@ -496,7 +496,7 @@
     font-size: 14px;
     padding-right: 20px;
     overflow: auto;
-    margin: 60px 30px 60px 50px;
+    margin: 60px 30px 60px 80px;
     height: 260px;
     color: #3a2026;
 }
@@ -743,7 +743,7 @@ h3:hover span.updates-headers::before {
   position: relative;
   display: flex;
   gap: 15px;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-left: 14%;
   width: 70%;
   height: 60px;

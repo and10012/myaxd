@@ -1,9 +1,9 @@
 let songs = [        
     {
-        name: 'Path of the Wind - lofi',
-        path: 'music/pathofthewind.m4a',
-        artist: 'Joe Hisaishi',
-        cover: 'images/pathofthewind.jpg'
+        name: 'La Parfum De Fleurs',
+        path: 'music/laparfumdefleurs.m4a',
+        artist: 'Taku Matsushiba',
+        cover: ''
     },
     {
         name: 'Super Shy',

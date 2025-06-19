@@ -35,7 +35,7 @@
     }
 
     .header, .footer {
-      height: 150px;
+      height: 270px;
       width: 100%;
       color: transparent;
     }
@@ -46,7 +46,7 @@
     .wrapper {
       left: 50%;  
       transform: translateX(-50%);
-      width: 1200px; height: 850px;
+      width: 840px; height: 610px;
       border-radius: 10px;
       border: solid #c8b1bc 2px;
       background: #ffff;
@@ -206,7 +206,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95%;
   color: #703c4a;
   max-width: 1140px; /* adjust if needed */
   margin-left: 1%;
@@ -399,24 +399,30 @@ button.forwardbutton{
 
   .hobbies-wrapper{
     position: relative;
-    width:100%;
-    height: 740px;
+    width: 99%;
+    height: 490px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 25px;
     display: grid;
-    grid-template-columns: repeat(16, 75px);
-    grid-template-rows: repeat(10, 74px);
+    grid-template-columns: repeat(17, 50px);
+    grid-template-rows: repeat(10, 49px);
+    border: solid #c8b1bc 2px;
   }
 
   [data-tab-content] {
-    display: none;
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
-  .active[data-tab-content]{
+  [data-tab-content].active {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
   }
+
 
   .tabs{
     font-family: "Lexend Giga";
@@ -437,7 +443,7 @@ button.forwardbutton{
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 140px;
     height: 30px;
     border-radius: 15px 15px 0 0 ;
     box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.466) inset;
@@ -459,21 +465,63 @@ button.forwardbutton{
 
 .hobbies-sidebar{
   width: 100%;
-  height: 98%;
-  margin: 12px 0 10px 0;
-  grid-area: 1 / 1 / 11 / 5;
+  height: 100%;
+  margin: 0;
+  padding: 0 4px 0 8px;
+  grid-area: 1 / 1 / 11 / 6;
   background-color: #eddee2;
+  display: grid;
+  border-right: solid #c8b1bc 2px;
+  grid-template-columns: repeat(6, 40.6px);
+  grid-template-rows: repeat(12, 40.8px);
 }
+
+.hobbyimg{
+  margin: 3px;
+}
+
+#sidebar-heading{
+  text-indent: 10px;
+  grid-area: 1 / 1 / 2 / 7;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+#hobby1{
+  background: url(images/hobbies1.jpg);
+  background-size: contain;
+  grid-area: 2 / 1 / 4 / 3;
+}
+#hobby2{
+  background: url(images/hobbies2.jpg);
+  background-size: contain;
+  grid-area: 2 / 3 / 4 / 5;
+}
+#hobby3{
+  background: url(images/hobbies3.jpg);
+  background-size: contain;
+  grid-area: 2 / 5 / 4 / 7;
+}
+#hobby4{
+  background: url(images/hobbies4.jpg);
+  background-size: contain;
+  grid-area: 4 / 1 / 6 / 3;
+}
+#hobby5{
+  background: url(images/hobbies5.jpg);
+  background-size: contain;
+  grid-area: 4 / 3 / 6 / 5;
+}
+#hobby6{
+  background: url(images/hobbies6.jpg);
+  background-size: contain;
+  grid-area: 4 / 5 / 6 / 7;
+}
+
 
 .hobbies-content{
-  padding: 10px;
-  grid-area: 1 / 5 / 11 / 17;
-}
-
-#hobbyimg{
-  margin: 8px;
-  height: 280px;
-  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  grid-area: 1 / 6 / 11 / 18;
 }
 
 .nav-buttons {
@@ -517,3 +565,36 @@ button.forwardbutton{
   content: "";
 }
 
+.belowphotos p{
+  margin: 5px 0 5px 0;
+}
+
+.belowphotos{
+  grid-area: 6 / 1 / 8 / 7;
+  margin: 5px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-bottom: solid #c8b1bc 2px;
+}
+
+.about{
+  grid-area: 8 / 1 / 12 / 7;
+  font-family: sans-serif;
+}
+
+.belowphotos a:visited{
+  color: #000000;
+}
+
+.about p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.totorogif{
+  grid-area: 12/ 1 / 13 / 2;
+  margin-bottom: 10px;
+  background: url('images/totoro.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
