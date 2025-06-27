@@ -2,43 +2,37 @@ let songs = [
     {
         name: 'La Parfum De Fleurs',
         path: 'music/laparfumdefleurs.m4a',
-        artist: 'Taku Matsushiba',
+        artist: 'By: Taku Matsushiba -',
         cover: ''
     },
     {
-        name: 'Super Shy',
-        path: 'music/supershy.mp3',
-        artist: 'NewJeans',
-        cover: 'images/supershy.jpg'
-    },
-    {
-        name: 'Merry Go Round of Life',
-        path: 'music/merrygoround.mp3',
-        artist: 'Joe Hisaishi',
+        name: 'Meet me in the Pale Moonlight',
+        path: 'music/palemoonlight.m4a',
+        artist: 'By: Lana Del Ray -',
         cover: 'images/merrygoround.jpg'
     },
     {
-        name: 'Supernatural - lofi',
-        path: 'music/supernatural.m4a',
-        artist: 'NewJeans',
+        name: 'Blatant Plagerism',
+        path: 'music/blatantplagerism.m4a',
+        artist: 'By: GHOST DATA -',
         cover: 'images/supernatural.jpg'
     },
     {
-        name: 'Cool With You',
-        path: 'music/coolwithyou.mp4',
-        artist: 'NewJeans',
+        name: 'Dress Down',
+        path: 'music/dressdown.m4a',
+        artist: 'By: Kaoru Akimoto -',
         cover: 'images/coolwithyou.jpg'
     },
     {
-        name: 'ETA',
-        path: 'music/eta.mp4',
-        artist: 'NewJeans',
+        name: 'Mayonaka No Door',
+        path: 'music/staywithme.mp3',
+        artist: 'By: Miki Matsubara -',
         cover: 'images/eta.jpg'
     },
     {
-        name: 'Magnetic - lofi',
-        path: 'music/magnetic.m4a',
-        artist: 'ILLIT',
+        name: 'Notice',
+        path: 'music/notice.m4a',
+        artist: 'By: Moe Shop -',
         cover: 'images/magnetic.jpg'
     },
 ]

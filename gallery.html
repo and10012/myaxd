@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!--Add icon to website title-->
-  <link rel="icon" href="images/pinkkuma.png" type="image/x-icon" />
+  <link rel="icon" href="images/miffy.png" type="image/x-icon" />
   <link rel="stylesheet" href="gallerystyle.css" type="text/css" />
   <link rel="stylesheet" href="gallerymobilestyle.css" type="text/css" /> 
   <!--Fonts-->
@@ -24,78 +24,1365 @@
 
 
 <body>
-
-  <img id="floating-image" src="images/pinkkuma.png"
+  <audio src="" id="audio"></audio>
+  <img id="floating-image" src="images/miffy.png"
        style="position: fixed; pointer-events: none; width: 30px; z-index:9999;"></img>
   
   <div class="header"></div>
+
   <div class="wrapper">
-
-
-    <div class="main">
-        <div id="box1" class="box">
-        
-            <div class="titlediv">
-                <div class="framediv">
-                    <h1 id="title">Gallery</h1>
-                </div>
-            </div>
-            <div class="navigation">
-                <img id="home-image"    src="images/girl.gif" />
-                <img id="projects-image"src="images/eevee.gif" />
-                <img id="hobbies-image" src="images/kuma.gif" />
-                <img id="gallery-image" src="images/greenkitty.gif" />
-                <img id="misc-image"    src="images/spinningmiffy.gif" />
-
-                <div class="nav-buttons">
-                <button class="nav-button" onclick="location.href='index.html'">Home</button>
-                <button class="nav-button" onclick="location.href='hobbies.html'">Hobbies</button>
-                <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
-                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
-                <button class="nav-button" onclick="location.href='journal.html'">Journal</button>
-                </div>
-                
-                <div class="lace-divider"></div>
-            </div>
-        </div>
-
-        <div id="box2" class="box">
-            
-        </div>
-
-        <div id="box3" class="box">
-            
-        </div>
-
-        <div id="box4" class="box">
-            
-        </div>
-
-        <div id="box5" class="box">
-           
-        </div>
-
-        <div id="box6" class="box">
-            
-        </div>
-
-        <div id="box7" class="box">
-           
-        </div>
-
-      <div class="main-footer">
-        <div class="main-footer-div"></div>
+    <div id="title" class="navigation-bar">
+      <p style="font-size: 12px;">instagram.html</p>
+      <div class="titlebtns">
+        <div class="titlebtn">-</div>
+        <div class="titlebtn">🗖</div>
+        <div class="titlebtn" style="font-size: 12px;">☒</div>
       </div>
     </div>
 
+    <div id ="navigation" class="navigation-bar">
+      <div class="nav-buttons">
+        <button class="nav-button" onclick="location.href='index.html'"><u>H</u>ome</button>
+        <button class="nav-button" onclick="location.href='hobbies.html'"><u>H</u>obbies</button>
+        <button class="nav-button" onclick="location.href='gallery.html'"><u>G</u>allery</button>
+        <button class="nav-button" onclick="location.href='projects.html'"><u>P</u>rojects</button>
+        <button class="nav-button" onclick="location.href='journal.html'"><u>J</u>ournal</button>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="usrname"><p><b>myaxd</b></p></div>
+      <div class="pfp"></div>
+      <div class="followers">
+        <div class="follower-count"><p><b style="font-size: 15px;">27</b></p><p>posts</p></div>
+        <div class="follower-count"><p><b style="font-size: 15px;">1069</b></p><p>followers</p></div>
+        <div class="follower-count"><p><b style="font-size: 15px;">15</b></p><p>following</p></div>
+      </div>
+      <div class="bio">
+        <p><b>Mya ୨ৎ</b></p>
+        <p>here is my lovely photo dump</p>
+        <p style="font-size: 11px; color: #3f3f3f ;">followed by <b>helen</b> and 14 others</p>
+      </div>
+      <div class="follow-btns">
+        <div id="following" class="follow-btn"> 
+          <p>following</p>
+        </div>
+        <div class="follow-btn"> 
+          <p>message</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="photo1" class="box"></div>
+      <div id="photo2" class="box"></div>
+      <div id="photo3" class="box"></div>
+      <div id="photo4" class="box"></div>
+      <div id="photo5" class="box"></div>
+      <div id="photo6" class="box"></div>
+      <div id="photo7" class="box"></div>
+      <div id="photo8" class="box"></div>
+      <div id="photo9" class="box"></div>
+      <div id="photo10" class="box"></div>
+      <div id="photo11" class="box"></div>
+      <div id="photo12" class="box"></div>
+      <div id="photo13" class="box"></div>
+      <div id="photo14" class="box"></div>
+      <div id="photo15" class="box"></div>
+      <div id="photo16" class="box"></div>
+      <div id="photo17" class="box"></div>
+      <div id="photo18" class="box"></div>
+      <div id="photo19" class="box"></div>
+      <div id="photo20" class="box"></div>
+      <div id="photo21" class="box"></div>
+      <div id="photo22" class="box"></div>
+      <div id="photo23" class="box"></div>
+      <div id="photo24" class="box"></div>
+      <div id="photo25" class="box"></div>
+      <div id="photo26" class="box"></div>
+      <div id="photo27" class="box"></div>
+    </div>
+
+    <div id= "song-bar" class="navigation-bar">
+      <div class="controls">
+            <button class="btn backwardbutton"><img id="backbutton" src="images/backbutton.png" alt=""></button>
+            <button class="play-button pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn forwardbutton"><img id="forwardbutton" src="images/forwardbutton.png" alt=""></button>
+        </div>
+      <div class="song-slider">
+        <input class="seek-bar" type="range" value="0">
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+      </div>  
+      <div class="marquee">
+        <div class="marquee-content" id="marquee-content">
+          <p class="music-name">song</p>
+          <p class="artist-name">artist name</p>
+        </div>
+      </div>
+    </div>
+  
   </div>
 
   <div class="footer"></div>
 
+
+  <!-- Post 1 -->
+  <div id="post1" class="post hidden">
+
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo1" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> me and hubby
+        </p>
+
+        <p id="descriptiondata">
+          View all 10 comments
+        </p>
+        <p id="descriptiondata">
+          July 1st, 2023
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+  <div id="post2" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo2" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> crochet miffy
+        </p>
+
+        <p id="descriptiondata">
+          View all 2 comments
+        </p>
+        <p id="descriptiondata">
+          10 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="post3" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo3" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> my rainy 8th gen si
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          20 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="post4" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo4" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> me at glacier national park
+        </p>
+
+        <p id="descriptiondata">
+          View all 12 comments
+        </p>
+        <p id="descriptiondata">
+          2 years ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post5" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo5" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> made these super cute soakers with helen
+        </p>
+
+        <p id="descriptiondata">
+          View all 3 comments
+        </p>
+        <p id="descriptiondata">
+          40 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post6" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo6" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> made the crochet cinta bag from kelliixtudio
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          1 year ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post7" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo7" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> yummy
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          39 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post8" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo8" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> making a crochet ipad cover
+        </p>
+
+        <p id="descriptiondata">
+          View all 6 comments
+        </p>
+        <p id="descriptiondata">
+          50 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post9" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo9" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> engagement photos
+        </p>
+
+        <p id="descriptiondata">
+          View all 40 comments
+        </p>
+        <p id="descriptiondata">
+          150 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post10" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo10" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> wedding poloroid
+        </p>
+
+        <p id="descriptiondata">
+          View all 7 comments
+        </p>
+        <p id="descriptiondata">
+          100 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post11" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo11" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> made decoden phone cases
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          5 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post12" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo12" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> Glacier National Park
+        </p>
+
+        <p id="descriptiondata">
+          View all 2 comments
+        </p>
+        <p id="descriptiondata">
+          3 years ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post13" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo13" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> me and father
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          3 years ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post14" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo14" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> hubbys old frs!
+        </p>
+
+        <p id="descriptiondata">
+          View all 20 comments
+        </p>
+        <p id="descriptiondata">
+          243 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post15" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo15" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> installing new headlights on the frs
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          1000000 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post16" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo16" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> our 2008 porsche 987
+        </p>
+
+        <p id="descriptiondata">
+          View all 5 comments
+        </p>
+        <p id="descriptiondata">
+          52 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post17" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo17" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> LABUBU
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          10 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post18" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo18" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> grand tetons
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          5000 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post19" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo19" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> on a walk...
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          8 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post20" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo20" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> watercolor of peaches
+        </p>
+
+        <p id="descriptiondata">
+          View all 1 comments
+        </p>
+        <p id="descriptiondata">
+          Many days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post21" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo21" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> polymer clay kitty charms
+        </p>
+
+        <p id="descriptiondata">
+          View all 9 comments
+        </p>
+        <p id="descriptiondata">
+          2 weeks ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="post22" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo22" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> hubby and his accord
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          393 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post23" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo23" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> LABUBU in the car
+        </p>
+
+        <p id="descriptiondata">
+          View all 12 comments
+        </p>
+        <p id="descriptiondata">
+          420 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post24" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo24" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> hondas at a lexus-toyota show?!?!?
+        </p>
+
+        <p id="descriptiondata">
+          View all 69 comments
+        </p>
+        <p id="descriptiondata">
+          69 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post25" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo25" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> on a trip! woke up real early for sunrise!
+        </p>
+
+        <p id="descriptiondata">
+          View all comments
+        </p>
+        <p id="descriptiondata">
+          393 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post26" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo26" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> porsche!!!!! cayman!!!!!
+        </p>
+
+        <p id="descriptiondata">
+          View all 12 comments
+        </p>
+        <p id="descriptiondata">
+          420 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="post27" class="post hidden">
+    <div class="post-content">
+      <div id="title" class="navigation-bar">
+        <p>instagram.html</p>
+        <div class="titlebtns">
+          <div class="titlebtn">-</div>
+          <div class="titlebtn" style="font-size: 8px;">🗖</div>
+          <div class="titlebtn">
+            <button class="close-post">☒</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="post-profile" class="navigation-bar"> 
+        <div class="post-pfp"></div>
+        <p><b>myaxd</b></p>
+        <button class="post-profile-btn">•••</button>
+      </div>
+
+      <div id="photo27" class="post-img"></div>
+
+      <div class="navigation-bar" id="post-interact">
+        <div class="interactbtn"><p>❤</p></div>
+        <div class="interactbtn"><p>🗨️</p></div>
+        <div class="interactbtn"><p>➤</p></div>
+      </div>
+
+      <div class="description">
+        <p>
+          <b>myaxd:</b> millie dawg 
+        </p>
+
+        <p id="descriptiondata">
+          View all 7919201201 comments
+        </p>
+        <p id="descriptiondata">
+          1 days ago
+        </p>
+      </div>
+      
+      <div id="post-footer" class="navigation-bar">
+        <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝</p>
+      </div>
+    </div>
+  </div>
+
+
   <script src ="cursor.js"></script>
-  <script src = "musicdata.js"></script>
+  <script src = "musicdatagallery.js"></script>
   <script src = "music.js"></script>
-  <audio src="" id="audio"></audio>
+  <script src="post.js"></script>
+  
 
 </body>
 </html>

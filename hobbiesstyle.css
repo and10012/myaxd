@@ -5,6 +5,12 @@
         font-style: normal;
     }
 
+  .major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
     .lexend-giga {
       font-family: "Lexend Giga", sans-serif;
       font-optical-sizing: auto;
@@ -30,7 +36,7 @@
       padding: 0;
       font-family: monospace;
       background: url('images/bggrid-transp.png') repeat center;
-      background-color: #fae8ed;
+      background-color: #eef8ff;
       scrollbar-color: #f0afcd transparent;
     }
 
@@ -48,78 +54,13 @@
       transform: translateX(-50%);
       width: 840px; height: 610px;
       border-radius: 10px;
-      border: solid #c8b1bc 2px;
+      border: solid #adb7ca 2px;
       background: #ffff;
       box-shadow: -10px 10px 10px rgba(0,0,0,0.25);
       padding: 10px;
       z-index: 0;
       position: relative;
     }
-
-    /* Title area */
-    .titlediv {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 200px;
-      background: url("images/hobbiesjumino.jpg");
-      background-size: cover;
-      background-position: center;
-      border-radius: 26px 26px 0 0;
-      z-index: 1;
-    }
-
-    .framediv {
-      position: relative;
-      top: 18px;
-      width: 50%;
-      height: 160px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: url("images/lacetitleframe.png") center top / contain no-repeat;
-      display: flex;
-      align-items: center;
-      z-index: 3;
-      text-align: center;
-    }
-    #title {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0;
-      font-family: "Roboto Mono", cursive;
-      font-size: 25px;
-      color: #703c4a;
-    }
-
-    .navigation {
-    position: absolute;
-    top: 198px;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: url('images/deer.jpg');
-    background-size: cover;
-    background-position: center; 
-    z-index: 5;
-  }
-
-  #home-image,
-  #projects-image,
-  #hobbies-image,
-  #gallery-image,
-  #misc-image {
-    position: absolute;
-    top: 22px;
-    height: 20px;
-    pointer-events: none;
-    z-index: 6; 
-  }
-
-  #home-image    { left: 200px; }
-  #hobbies-image{ left: 325px; }
-  #gallery-image { left: 440px; }
-  #projects-image { left: 570px; }
-  #misc-image    { left: 685px; }
 
   .nav-buttons {
     top: 2px;
@@ -146,9 +87,6 @@
     text-indent: 14px;
     position: relative;
     z-index: 6;
-  }
-  .nav-button:hover {
-    background-image: url('images/navbutton.png');
   }
 
   .lace-divider {
@@ -192,7 +130,7 @@
     margin-bottom: 5px ;
     height: 30px;
     width: 99%;
-    border: solid #c8b1bc 2px;
+    border: solid #b1b8c8 2px;
     box-shadow: inset;
   }
 
@@ -238,7 +176,7 @@
     overflow: hidden;
     height: 5px;
     border-radius: 10px;
-    background-color: #eaafc2;
+    background-color: #b1b8c8;
     cursor: pointer;
     z-index: 6;
   }
@@ -392,7 +330,7 @@ button.forwardbutton{
       grid-area: 4 / 1 / 10 / 9;
       margin: 20px 30px 60px 30px;
       background: #ffffff;
-      border: solid #c8b1bc 2px;
+      border: solid #b1b8c8 2px;
       padding: 5px;
       box-shadow: 0px 0px 10px 5px rgba(246, 67, 151, 0.2);
     }
@@ -407,7 +345,7 @@ button.forwardbutton{
     display: grid;
     grid-template-columns: repeat(17, 50px);
     grid-template-rows: repeat(10, 49px);
-    border: solid #c8b1bc 2px;
+    border: solid #b1b8c8 2px;
   }
 
   [data-tab-content] {
@@ -447,7 +385,7 @@ button.forwardbutton{
     height: 30px;
     border-radius: 15px 15px 0 0 ;
     box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.466) inset;
-    background: #f3b6c5;
+    background: #c5d0d8;
   }
 
   .tab p, .tab.active p{
@@ -455,11 +393,11 @@ button.forwardbutton{
   }
 
   .tab:hover{
-    background: #f7cdd6;
+    background: #dee7ed;
   }
 
   .tab.active{
-    background: #eddee2;
+    background: #cde6f7;
   }
 
 
@@ -469,9 +407,9 @@ button.forwardbutton{
   margin: 0;
   padding: 0 4px 0 8px;
   grid-area: 1 / 1 / 11 / 6;
-  background-color: #eddee2;
+  background-color: #dee4ed;
   display: grid;
-  border-right: solid #c8b1bc 2px;
+  border-right: solid #b1b8c8 2px;
   grid-template-columns: repeat(6, 40.6px);
   grid-template-rows: repeat(12, 40.8px);
 }
@@ -520,8 +458,13 @@ button.forwardbutton{
 
 
 .hobbies-content{
-  padding: 10px 30px 10px 30px;
+  padding: 1px 0px 10px 30px;
+  overflow-x:hidden;
+  margin:5px 25px 5px 5px;
   grid-area: 1 / 6 / 11 / 18;
+  scrollbar-color: #c0c0c0 transparent;
+  scrollbar-width: thin; 
+  overflow-y: auto; 
 }
 
 .nav-buttons {
@@ -592,9 +535,229 @@ button.forwardbutton{
 }
 
 .totorogif{
-  grid-area: 12/ 1 / 13 / 2;
+  grid-area: 12/ 6 / 13 / 7;
   margin-bottom: 10px;
   background: url('images/totoro.gif');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.hobbies-content-inner{
+    height: 3150px;
+    width: 525px;
+    display: grid;
+    grid-template-columns: repeat(7, 75px);
+    grid-template-rows: repeat(42, 75px);
+}
+
+.si{
+  grid-area: 3 / 4 / 5 / 8;
+  width: 300px;
+  background: url("images/si.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+  z-index: 3;;
+}
+
+.si-memopad{
+  grid-area: 1 / 1 / 5 / 6;
+  background: url("images/notecars.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+#si-title{
+  grid-area: 1 / 5 / 3 / 8;
+  font-family: "Major Mono Display", monospace;
+  z-index: 4;
+  font-size: 40px;
+  margin: 20px
+}
+
+#si-memopad-about{
+  align-items: center;
+  justify-content: center;
+  margin: 110px 60px 0px 70px;
+  transform: rotate(-6deg);
+}
+
+.si-done{
+  grid-area: 5 / 3 / 9 / 8;
+  background: url("images/turtlememo.jpg");
+  background-size: contain;
+  background-position-x: left;
+  background-repeat: no-repeat;
+}
+
+.si-todo{
+  grid-area: 7 / 1 / 11 / 5;
+  background: url("images/stickynote.png");
+  background-size: contain;
+  background-position: center;
+  background-position-x: left;
+  background-repeat: no-repeat;
+}
+
+.crab{
+  grid-area: 3 / 2 / 6 / 4;
+  background: url("images/bluecrab.png");
+  background-size: contain;
+  background-position: center;
+  margin-top: 60px;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  z-index: 4;
+  width: 200px;
+}
+
+#si-done{
+  text-align: center;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 60px 0px 60px;
+}
+
+#si-todo{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 50px 0px 0px;
+}
+
+.shell{
+  background: url("images/shell.png");
+  background-size: contain;
+  background-position: center;
+  grid-area: 5 / 1 / 7 / 3;
+  z-index: 6;
+  background-repeat: no-repeat;
+}
+
+.jelly{
+  grid-area: 8 / 4 / 11 / 8;
+  background: url(images/bluejelly.png);
+  transform: rotate(70deg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+
+.slideshow-container{
+    grid-area: 11 / 1 / 16 / 8;
+    margin: 0px 20px 0 10px;
+    background: url(images/slideshowbackground.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slideshow-container-inner{
+  width: 416px;
+  height: 264px;
+  left: 10px;
+  top: 45px;
+  margin: 0px 0px 0px 37px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  color: #ccdaf7;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  left: -2%;
+  font-size: 10px;
+  padding: 8px 0px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -20%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.accord{
+  grid-area: 17 / 1 / 21 / 6;
+  background: url(images/accord.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+  margin-top: 30px;
+  z-index: 5;
+}
+
+.accordmemo{
+  grid-area: 16 / 5 / 22 / 8;
+  background:url(images/accordmemo.png);
+  background-size: contain;
+  background-position: center;
+  overflow: visible;
+  background-repeat: no-repeat;
+}
+
+.shark{
+  grid-area: 16 / 4 / 18 / 7;
+  margin: 20px 0 0 20px;
+  background: url(images/shark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.accord-title{
+  grid-area: 16 / 1 / 18 / 5;
+  font-family: "Major Mono Display", monospace;
+  font-size: 30px;
+}
+
+.accord-title p{
+  margin: 40px 0px 0px 20px;
 }

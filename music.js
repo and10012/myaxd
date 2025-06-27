@@ -18,9 +18,7 @@
 
         const entry = `
             <p class="music-name">${song}</p>
-            <p>•</p>
             <p class="artist-name">${artist}</p>
-            <p>•</p>
         `;
 
         marquee.innerHTML = entry.repeat(100);
