@@ -761,3 +761,14 @@ button.forwardbutton{
 .accord-title p{
   margin: 40px 0px 0px 20px;
 }
+
+.accord-memo-inner{
+   grid-area: 16 / 5 / 22 / 8;
+   transform: rotate(4deg);
+   margin: 120px 20px 0 50px;
+   align-items: center;
+}
+
+.accord-memo-inner p{
+  font-size: 12px;
+}
