@@ -154,7 +154,8 @@
   #projects-image,
   #hobbies-image,
   #gallery-image,
-  #misc-image {
+  #misc-image,
+  #vlog-image {
     position: absolute;
     top: 22px;
     height: 20px;
@@ -162,11 +163,12 @@
     z-index: 6; 
   }
 
-  #home-image    { left: 200px; }
-  #hobbies-image{ left: 325px; }
-  #gallery-image { left: 440px; }
-  #projects-image { left: 570px; }
-  #misc-image    { left: 685px; }
+  #home-image    { left: 140px; }
+  #hobbies-image{ left: 265px; }
+  #gallery-image { left: 380px; }
+  #projects-image { left: 510px; }
+  #misc-image    { left: 620px; }
+  #vlog-image    { left: 740px; }
 
   .nav-buttons {
     top: 2px;
@@ -549,7 +551,7 @@
 }
 
 #camera:hover::after {
-  content: "Me ( °ㅁ°)";
+  content: "Me ( Â°ã…Â°)";
   font-size: 14px;
   justify-content: center;
   align-items: center;
@@ -673,7 +675,7 @@ p:nth-of-type(4n + 4) span.title:first-child {
 p:hover span.title::before {
   font-weight: bold;
   cursor:auto;
-	content: "⤏";
+	content: "â¤";
 }
 
 .updates{
@@ -733,7 +735,7 @@ span.updates-headers {
 
 h3:hover span.updates-headers::before {
   font-family: "Fuzzy Bubbles Bold";
-	content: "🌸";
+	content: "ðŸŒ¸";
 }
 
 .social-buttons{
@@ -781,4 +783,9 @@ h3:hover span.updates-headers::before {
   width: 30px;
   background: url("images/pinterest.png");
   z-index: 6;
+}
+
+a:visited, 
+a:link{
+  color: #703c4a;
 }

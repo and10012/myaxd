@@ -1,0 +1,86 @@
+/* === FONT CLASSES === */
+.butterfly-kids-regular {
+  font-family: "Butterfly Kids", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body, html {
+  font-family: monospace;
+  background: url(images/vlogbg.jpg) repeat center;
+  margin: 0 auto;
+  padding: 48px; /* 3rem */
+  max-width: 720px; /* 45em (assuming 16px base) */
+  overflow: auto;
+
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0 0 8px 0; /* 0.5rem bottom */
+  max-width: 688px;  /* 43em */
+}
+
+h1:hover{
+  cursor: pointer;
+}
+
+p {
+  max-width: 688px; /* 43em */
+  margin-left: 32px; /* 2em */
+}
+
+footer {
+  max-width: 688px; /* 43em */
+  margin-left: 32px; /* 2em */
+}
+
+hr {
+  align-content: initial;
+}
+
+.nav-label {
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* === VIDEO PAGE LAYOUT === */
+.main-content {
+  padding: 50px 0;
+}
+
+.section-title {
+  display: inline-block;
+  margin-left: 8px; /* 0.5rem */
+}
+
+.video-section fieldset {
+  border: 1px solid #ccc;
+  padding: 24px; /* 1.5rem */
+  margin: 32px auto; /* 2rem */
+  max-width: 800px;
+}
+
+.video-year,
+.video-category {
+  margin-bottom: 24px; /* 1.5rem */
+}
+
+.video-player-wrapper {
+  text-align: center;
+  margin: 32px 0; /* 2rem */
+}

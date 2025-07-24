@@ -7,7 +7,7 @@
 
   .major-mono-display-regular {
     font-family: "Major Mono Display", monospace;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
   }
 
@@ -25,6 +25,16 @@
     font-style: normal;
     }
 
+  .sour-gummy {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
   .fuzzy-bubbles-regular {
     font-family: "Fuzzy Bubbles", sans-serif;
     font-weight: 400;
@@ -36,7 +46,7 @@
       padding: 0;
       font-family: monospace;
       background: url('images/bggrid-transp.png') repeat center;
-      background-color: #eef8ff;
+      background-color: #eef7ff;
       scrollbar-color: #f0afcd transparent;
     }
 
@@ -176,7 +186,7 @@
     overflow: hidden;
     height: 5px;
     border-radius: 10px;
-    background-color: #b1b8c8;
+    background-color: #b1c5f1;
     cursor: pointer;
     z-index: 6;
   }
@@ -407,7 +417,7 @@ button.forwardbutton{
   margin: 0;
   padding: 0 4px 0 8px;
   grid-area: 1 / 1 / 11 / 6;
-  background-color: #dee4ed;
+  background-color: #e4efff;
   display: grid;
   border-right: solid #b1b8c8 2px;
   grid-template-columns: repeat(6, 40.6px);
@@ -543,11 +553,11 @@ button.forwardbutton{
 }
 
 .hobbies-content-inner{
-    height: 3150px;
+    height: 2925px;
     width: 525px;
     display: grid;
     grid-template-columns: repeat(7, 75px);
-    grid-template-rows: repeat(42, 75px);
+    grid-template-rows: repeat(39, 75px);
 }
 
 .si{
@@ -587,7 +597,7 @@ button.forwardbutton{
 
 .si-done{
   grid-area: 5 / 3 / 9 / 8;
-  background: url("images/turtlememo.jpg");
+  background: url("images/simemo.jpg");
   background-size: contain;
   background-position-x: left;
   background-repeat: no-repeat;
@@ -619,7 +629,7 @@ button.forwardbutton{
   font-size: 10px;
   justify-content: center;
   align-items: center;
-  margin: 50px 60px 0px 60px;
+  margin: 70px 60px 0px 60px;
 }
 
 #si-todo{
@@ -771,4 +781,136 @@ button.forwardbutton{
 
 .accord-memo-inner p{
   font-size: 12px;
+}
+
+.accord-todo-img{
+  grid-area: 20 / 1 / 23 / 3;
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 130px;
+  background-image: url(images/shark2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.accord-done-img{
+  grid-area: 22 / 6 / 25 / 8;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-image: url(images/surprisegirl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.accord-memo2{
+  padding: 140px 20px 20px 20px;
+  grid-area: 21 / 2 / 27 / 7;
+  background: url(images/accordmemo2.jpg);
+  background-size: contain;
+  background-position: center;
+  font-family: "Major Mono Display", monospace;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.toastcat{
+  grid-area: 26 / 1 / 28 / 3;
+  background: url(images/cattoast.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#frs-title{
+  grid-area: 27 / 3 / 28 / 7;
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 35px;
+  font-family: "Major Mono Display", monospace;
+} 
+
+.frs-memo{
+  grid-area: 28 / 1 / 33 / 5;
+  background: url(images/frsmemo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+#frs{
+  font-family: "Major Mono Display", monospace;
+  font-size: 15px;
+  margin: 70px 60px 0px 30px;
+}
+
+.frs1{
+  grid-area: 28 / 4 / 31 / 8;
+  background: url(images/frs.png);
+  background-size: contain;
+  background-position: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.frs2{
+  grid-area: 30 / 4 / 33 / 8;
+  background: url(images/frs2.png);
+  background-repeat: no-repeat;
+  z-index: 2;
+  background-size: contain;
+  background-position: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.whale{
+  grid-area: 33 / 1 / 36 / 4;
+  background: url(images/whale.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(10deg);
+}
+
+#cayman-title{
+  font-family: "Major Mono Display", monospace;
+  grid-area: 33 / 4 / 34 / 8;
+  margin: 30px;
+  font-size: 36px;
+  z-index: 3;
+}
+
+.cayman{
+  grid-area: 35 / 4 / 38 / 8;
+  background: url(images/cayman.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cayman-memo{
+  grid-area: 34 / 1 / 39 / 5;
+  background: url(images/caymanmemo.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cayman-memo p{
+  text-align: center;
+  margin: 110px 75px 0 40px;
+  z-index: 5;
+}
+
+.shells{
+  display: flex;
+  flex-direction: row;
+  height: 67px;
+  gap: 15px;
+  grid-area: 39 / 1 / 40 / 8;
 }

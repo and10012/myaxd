@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="scroll.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>myaxd-cafe</title>
+  <meta name="author" content="Mya A" />
+  <meta name="description" content="myaxd website cafe" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--Add icon to website title-->
+  <link rel="icon" href="images/pinkkuma.png" type="image/x-icon" />
+  <link rel="stylesheet" href="cafestyle.css" type="text/css" />
+  <!--Fonts-->
+  <!--Roboto Mono-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!--Dynapuff-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Tektur:wght@400..900&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap&family=Lexend+Giga:wght@100..900&display=swap&family=Major+Mono+Display&display=swap&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <img id="floating-image" src="images/pinkkuma.png"
+       style="position: fixed; pointer-events: none; width: 30px; z-index:9999;"></img>
+  
+  <div class="header"></div>
+  <div class="wrapper">
+    <div class="main">
+      <div class ="navigation">
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="location.href='index.html'"><u>H</u>ome</button>
+          <button class="nav-button" onclick="location.href='hobbies.html'"><u>H</u>obbies</button>
+          <button class="nav-button" onclick="location.href='gallery.html'"><u>G</u>allery</button>
+          <button class="nav-button" onclick="location.href='projects.html'"><u>P</u>rojects</button>
+          <button class="nav-button" onclick="location.href='cafe.html'"><u>C</u>afe</button>
+          <button class="nav-button" onclick="location.href='vlog.html'"><u>V</u>log</button>
+        </div>
+      </div>
+      <div class="welcome">
+        <h1>𖹭 welcome to my cafe 𖹭</h1>
+        <p>so glad you're here</p>
+      </div>
+
+      <div id="expand-section"></div>
+
+      <div class="menu">
+        <button id="b1" data-section="breakfast"></button>
+        <button id="b2" data-section="lunch"></button>
+        <button id="b3" data-section="dessert"></button>
+        <button id="b4" data-section="beverages"></button>
+      </div>
+      <div class="menu-labels">
+        <p>breakfast</p>
+        <p>lunch</p>
+        <p>dessert</p>
+        <p>beverages</p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div class="footer"></div>
+  <script src ="cursor.js"></script>
+  <script src = "musicdata.js"></script>
+  <script src = "music.js"></script>
+  <script src="scroll.js"></script>
+  <script src="collapse.js"></script>
+</body>
+</html>
+
+<!-- <div class="navigation">
+  <div class="nav-buttons">
+  <button class="nav-button" onclick="location.href='index.html'">Home</button>
+  <button class="nav-button" onclick="location.href='hobbies.html'">Hobbies</button>
+  <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
+  <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
+  <button class="nav-button" onclick="location.href='cafe.html'"><p style="margin-top: 20px; margin-left: 5px;">Cafe</p></button>
+  <button class="nav-button" onclick="location.href='vlog.html'"><p style="margin-top: 20px; margin-left: 5px;">Vlog</p></button>
+  </div>
+</div> -->

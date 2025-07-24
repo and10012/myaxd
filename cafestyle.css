@@ -1,0 +1,248 @@
+/* Font Butterfly Kids */
+    .butterfly-kids-regular {
+        font-family: "Butterfly Kids", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Font Bagel */
+    .bagel-fat-one-regular {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+  .fuzzy-bubbles-regular {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .sour-gummy {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  
+    .national-park {
+      font-family: "National Park", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    body, html {
+      position:relative;
+      font-family: monospace;
+      background: url('images/bakery-bg.jpeg') no-repeat center;
+      background-size: cover;
+      background-color: #fae8ed;
+      scrollbar-color: #f0afcd transparent;
+      color: #b89368;
+    }
+
+    .header, .footer {
+      height: 150px;
+      width: 100%;
+      color: transparent;
+    }
+    .header { position: relative; top: 0; }
+
+    .wrapper {
+      position: relative;
+      left: 50%;  
+      transform: translateX(-50%);
+      height: 895px;
+      border-radius: 30px;
+      z-index: 0;
+      position: relative;
+    }
+
+    .box {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: visible;
+    }
+
+    #box1 {
+        grid-area: 1 / 1 / 4 / 9;
+    }
+
+
+  .navigation {
+    position:absolute;
+    top: 10px;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    background-position: center; 
+    z-index: 5;
+  }
+
+  .nav-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 50px;
+      position: relative; /* create new stacking context */
+      z-index: 5;         /* above the GIFs */
+    }
+
+    .nav-button {
+      all: unset;
+      width: auto;
+      height: 40px;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      font-family: sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      position: relative;
+      z-index: 6;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+  .nav-button:hover{
+    font-weight: bold;
+  }
+
+
+.main {
+  background: url('images/crisscross-bgrid.png') repeat center;
+  background-color: #e9dab9;
+  height: auto;
+  position: relative;
+  width: 750px;
+  margin: 0 auto; /* center horizontally */
+  margin-top: 60px;
+  overflow: visible;
+  border-radius: 20px;
+  border: dotted 4px #5f4412;
+  box-shadow: -5px 5px 4px rgba(0,0,0,0.25);
+  font-family: "Sour Gummy", sans-serif;
+  transition: all 0.5s ease;
+}
+
+  .main title{
+    color: #5f4412;
+  }
+
+  .welcome{
+    height: 100px;
+    text-align: center;
+    margin: 40px 0px 10px 0;
+  }
+
+  .welcome h1{
+    line-height: 35px;
+    margin: 80px 0 10px 0;
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .welcome p{
+    font-size: 17px;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .menu{
+    padding: 0 60px; 
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+  }
+
+  .menu button{
+    padding: 2%;
+    display: flex;
+    all: unset;
+    height: 110px;
+    width: 110px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth animation */
+  }
+
+  .menu button:hover {
+    transform: scale(1.1); /* Enlarge to 120% */
+  }
+
+  #b1{
+    background: url(images/cafe-home1.png) no-repeat center;
+    background-size: contain;
+  }
+
+  #b2{
+    background: url(images/cafe-home2.png) no-repeat center;
+    background-size: contain;
+  }
+
+  #b3{
+    background: url(images/cafe-home3.png) no-repeat center;
+    background-size: contain;
+  }
+
+  #b4{
+    background: url(images/cafe-home4.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .menu-labels{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 20px;
+    padding: 0 70px; 
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 110px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .menu-labels p{
+    display: flex;
+    width: 100px;
+  }
+
+/* Optional: style the section content */
+.menu-section {
+  margin: 10px 30px 30px;
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #fff6f6;
+  font-family: 'Courier New', Courier, monospace;
+  max-height: 350px;
+}
+
+.menu-section.breakfast { background-color: #fff1cc; height: 200px;}
+.menu-section.lunch { background-color: #d8f5d8; height: 450px;}
+.menu-section.dessert { background-color: #fce5f1; height: 150px;}
+.menu-section.beverages { background-color: #e3f2fd; height: 250px;}
+
+#expand-section {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 0 30px 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+/* when expanded */
+#expand-section.expanded {
+  max-height: 500px; /* or use content-dependent values via JS */
+  padding: 20px;
+  opacity: 1;
+}
