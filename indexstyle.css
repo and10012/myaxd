@@ -551,7 +551,7 @@
 }
 
 #camera:hover::after {
-  content: "Me ( Â°ã…Â°)";
+  content: "Me ꒰ᐢ. .ᐢ꒱";
   font-size: 14px;
   justify-content: center;
   align-items: center;
@@ -675,7 +675,7 @@ p:nth-of-type(4n + 4) span.title:first-child {
 p:hover span.title::before {
   font-weight: bold;
   cursor:auto;
-	content: "â¤";
+	content: "✩";
 }
 
 .updates{
@@ -735,7 +735,7 @@ span.updates-headers {
 
 h3:hover span.updates-headers::before {
   font-family: "Fuzzy Bubbles Bold";
-	content: "ðŸŒ¸";
+	content: "↪";
 }
 
 .social-buttons{

@@ -50,14 +50,64 @@
       <div class="menu">
         <button id="b1" data-section="breakfast"></button>
         <button id="b2" data-section="lunch"></button>
+        <button id="b4" data-section="dinner"></button>
         <button id="b3" data-section="dessert"></button>
-        <button id="b4" data-section="beverages"></button>
+        
       </div>
+      
+      <!-- Hidden templates (content lives here) -->
+      <div id="templates" style="display: none;">
+        <div id="breakfast-template" class="menu-section breakfast">
+          <div class="menu-section-inner">
+          <div class="cafe-title">
+            <div class="title1">Breakfast Menu</div>
+            <div class="menu-images">
+              <img id="bread" src="images/bread.png" alt="" width="100px" height="100px">
+              <img id="menu-cat" src="images/menu-title-cat.png" alt="" width="290px" height="250px">
+              <img id="toast" src="images/toast.png" alt="" width="100px" height="100px">
+            </div>
+            </div>
+            <div class="menu-section-inner-inner">
+              <div id="menu-item1" class="menu-item">
+                <div id="img1" class="menu-item-img">
+                </div>
+              </div>
+              <div id ="menu-item2" class="menu-item">
+                <div id="img1" class="menu-item-img">
+                </div>
+              </div>
+              <div id ="menu-item3" class="menu-item">
+                <div id="img1" class="menu-item-img">
+                </div>
+              </div>
+              <div class="menu-item">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="lunch-template" class="menu-section lunch">
+          <h2>Lunch</h2>
+          <p>Sandwiches, soups, salads...<br>More items to make it tall.<br>More...<br>Even more...</p>
+        </div>
+
+        <div id="dinner-template" class="menu-section dinner">
+          <h2>Dinner</h2>
+          <p>Cakes, cookies, ice cream...</p>
+        </div>
+
+        <div id="dessert-template" class="menu-section dessert">
+          <h2>Beverages</h2>
+          <p>Coffee, tea, smoothies...</p>
+        </div>
+      </div>
+
       <div class="menu-labels">
         <p>breakfast</p>
         <p>lunch</p>
+        <p>dinner</p>
         <p>dessert</p>
-        <p>beverages</p>
       </div>
       
     </div>
@@ -70,6 +120,7 @@
   <script src = "music.js"></script>
   <script src="scroll.js"></script>
   <script src="collapse.js"></script>
+
 </body>
 </html>
 
