@@ -54,6 +54,7 @@
       color: transparent;
     }
     .header { position: relative; top: 0; }
+    .footer {position: relative; top: 300px;}
 
     .wrapper {
       position: relative;
@@ -336,3 +337,12 @@
   overflow: hidden;
   border-radius: 15px;
 } */
+
+.item-title{
+  height: 20px; 
+}
+
+.item-title p{
+  margin-top: 5px;
+  font-family: "Sour Gummy", sans-serif;
+}
