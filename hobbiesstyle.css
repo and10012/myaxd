@@ -735,7 +735,7 @@ button.forwardbutton{
 }
 
 .accord{
-  grid-area: 17 / 1 / 21 / 6;
+  grid-area: 24 / 1 / 28 / 6;
   background: url(images/accord.png);
   background-size: contain;
   background-position: center;
@@ -746,7 +746,7 @@ button.forwardbutton{
 }
 
 .accordmemo{
-  grid-area: 16 / 5 / 22 / 8;
+  grid-area: 23 / 5 / 29 / 8;
   background:url(images/accordmemo.png);
   background-size: contain;
   background-position: center;
@@ -755,15 +755,41 @@ button.forwardbutton{
 }
 
 .shark{
-  grid-area: 16 / 4 / 18 / 7;
+  grid-area: 23 / 4 / 25 / 7;
   margin: 20px 0 0 20px;
   background: url(images/shark.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+.si-2012-title{
+  grid-area: 16 / 1 / 17 / 5;
+  font-family: "Major Mono Display", monospace;
+  font-size: 30px;
+}
+
+.si2{
+  grid-area: 16 / 3 / 20 / 9;
+  background: url('images/si2012.png');
+  background-size: contain;
+  transform: rotate(2deg);
+  margin: 0px 20px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fishbowl{
+  background: url('images/fishbowl.png');
+  grid-area: 15 / 6 / 18 / 8;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  transform: rotate(6deg);
+  margin-top: 25px;
+}
+
 .accord-title{
-  grid-area: 16 / 1 / 18 / 5;
+  grid-area: 23 / 1 / 25 / 5;
   font-family: "Major Mono Display", monospace;
   font-size: 30px;
 }
@@ -773,7 +799,7 @@ button.forwardbutton{
 }
 
 .accord-memo-inner{
-   grid-area: 16 / 5 / 22 / 8;
+   grid-area: 23 / 5 / 29 / 8;
    transform: rotate(4deg);
    margin: 120px 20px 0 50px;
    align-items: center;
@@ -784,7 +810,7 @@ button.forwardbutton{
 }
 
 .accord-todo-img{
-  grid-area: 20 / 1 / 23 / 3;
+  grid-area: 27 / 1 / 30 / 3;
   margin-top: 30px;
   margin-left: 20px;
   width: 130px;
@@ -794,7 +820,7 @@ button.forwardbutton{
 }
 
 .accord-done-img{
-  grid-area: 22 / 6 / 25 / 8;
+  grid-area: 29 / 6 / 32 / 8;
   height: 150px;
   margin-top: 10px;
   margin-left: 20px;
@@ -805,7 +831,7 @@ button.forwardbutton{
 
 .accord-memo2{
   padding: 140px 20px 20px 20px;
-  grid-area: 21 / 2 / 27 / 7;
+  grid-area: 28 / 2 / 34 / 7;
   background: url(images/accordmemo2.jpg);
   background-size: contain;
   background-position: center;
@@ -815,7 +841,7 @@ button.forwardbutton{
 }
 
 .toastcat{
-  grid-area: 26 / 1 / 28 / 3;
+  grid-area: 33 / 1 / 35 / 3;
   background: url(images/cattoast.png);
   background-size: contain;
   background-position: center;
@@ -823,7 +849,7 @@ button.forwardbutton{
 }
 
 #frs-title{
-  grid-area: 27 / 3 / 28 / 7;
+  grid-area: 34 / 3 / 35 / 7;
   margin: 10px;
   margin-top: 30px;
   font-size: 35px;
@@ -831,7 +857,7 @@ button.forwardbutton{
 } 
 
 .frs-memo{
-  grid-area: 28 / 1 / 33 / 5;
+  grid-area: 35 / 1 / 40 / 5;
   background: url(images/frsmemo.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -847,7 +873,7 @@ button.forwardbutton{
 }
 
 .frs1{
-  grid-area: 28 / 4 / 31 / 8;
+  grid-area: 35 / 4 / 38 / 8;
   background: url(images/frs.png);
   background-size: contain;
   background-position: center;
@@ -858,7 +884,7 @@ button.forwardbutton{
 }
 
 .frs2{
-  grid-area: 30 / 4 / 33 / 8;
+  grid-area: 37 / 4 / 40 / 8;
   background: url(images/frs2.png);
   background-repeat: no-repeat;
   z-index: 2;
@@ -869,7 +895,7 @@ button.forwardbutton{
 }
 
 .whale{
-  grid-area: 33 / 1 / 36 / 4;
+  grid-area: 40 / 1 / 43 / 4;
   background: url(images/whale.png);
   background-size: contain;
   background-position: center;
@@ -879,14 +905,14 @@ button.forwardbutton{
 
 #cayman-title{
   font-family: "Major Mono Display", monospace;
-  grid-area: 33 / 4 / 34 / 8;
+  grid-area: 40 / 4 / 41 / 8;
   margin: 30px;
   font-size: 36px;
   z-index: 3;
 }
 
 .cayman{
-  grid-area: 35 / 4 / 38 / 8;
+  grid-area: 42 / 4 / 45 / 8;
   background: url(images/cayman.png);
   background-size: contain;
   background-position: center;
@@ -894,7 +920,7 @@ button.forwardbutton{
 }
 
 .cayman-memo{
-  grid-area: 34 / 1 / 39 / 5;
+  grid-area: 41 / 1 / 46 / 5;
   background: url(images/caymanmemo.jpg);
   background-size: contain;
   background-position: center;
@@ -912,5 +938,5 @@ button.forwardbutton{
   flex-direction: row;
   height: 67px;
   gap: 15px;
-  grid-area: 39 / 1 / 40 / 8;
+  grid-area: 46 / 1 / 47 / 8;
 }
