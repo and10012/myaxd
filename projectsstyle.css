@@ -350,7 +350,7 @@ li{
   animation: slideFadeIn 0.6s forwards;
 }
 
-#rpi{
+#robot{
     height: 730px;
     opacity: 50%;
     animation: slideFadeIn 0.6s forwards;

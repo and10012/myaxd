@@ -557,7 +557,7 @@ button.forwardbutton{
     width: 525px;
     display: grid;
     grid-template-columns: repeat(7, 75px);
-    grid-template-rows: repeat(39, 75px);
+    grid-template-rows: repeat(50, 75px);
 }
 
 .si{
