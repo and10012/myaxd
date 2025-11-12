@@ -226,18 +226,48 @@
   padding: 10px;
   overflow-y: auto;
   border-radius: 30px;
-  background-color: #fff6f6;
+  background-color: #fff;
   font-family: 'Courier New', Courier, monospace;
   height: auto;
-  background: url(images/cafe_inner_bg.png);
+  /* background: url(images/cafe_inner_bg.png); */
   border: #5f4412 1px solid;
   box-shadow: 2px 1px 2px 2px rgb(0 0 0 / 20%);
-  display: grid;
-  height: 690px;
+  height: 570px;
   justify-content: center;
   align-items: center;
   scrollbar-width: thin;
   overflow: auto;
+}
+
+.menu-section-inner{
+  /* height: 700px; */
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+.menu-section-inner-inner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(9, 75px);
+    grid-template-rows: repeat(8, 70px); 
+}
+
+.menu-section-title{
+  grid-area: 1 / 3 / 2 / 8;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px, 50px;
+}
+
+.bread{
+  margin-top: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 #expand-section {
@@ -252,51 +282,10 @@
 
 /* when expanded */
 #expand-section.expanded {
-  max-height: 500px; /* or use content-dependent values via JS */
+  max-height: 720px; /* or use content-dependent values via JS */
   padding:0;
   opacity: 1;
   justify-content: center;
-}
-
-.menu-section-inner{
-  height: 1500px;
-  width: auto;
-  overflow: auto;
-}
-
-.cafe-title{
-  height: 350px;
-  width: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-section-inner-inner{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 220px);
-    grid-template-rows: repeat(4, 280px); 
-}
-
-.menu-images{
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-}
-
-#menu-cat{
-  margin-top: 30px;
-}
-#bread{
-  margin-top: 170px;
-  transform: rotate(-20deg);
-}
-#toast{
-  margin-top: 170px;
-  transform: rotate(20deg);
 }
 
 .title1{
