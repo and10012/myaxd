@@ -788,6 +788,15 @@ button.forwardbutton{
   margin-top: 25px;
 }
 
+.clipboard{
+  grid-area: 18  / 1 /22 / 6;
+  background: url(images/clipboard.png);
+  margin: 10px 50px;
+  transform: rotate(-2deg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
 .accord-title{
   grid-area: 23 / 1 / 25 / 5;
   font-family: "Major Mono Display", monospace;
