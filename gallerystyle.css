@@ -257,7 +257,7 @@ A
     scrollbar-width: thin; 
     overflow: auto; 
     grid-template-columns: repeat(3 , 130px);
-    grid-template-rows: repeat(9, 130px);
+    grid-template-rows: repeat(15, 130px);
   }
 
 

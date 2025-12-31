@@ -30,7 +30,7 @@
       expandHolder.style.maxHeight = '0px';
 
       requestAnimationFrame(() => {
-        const fullHeight = node.scrollHeight;
+        const fullHeight = expandHolder.scrollHeight;
         expandHolder.style.transition = 'max-height 0.5s ease';
         expandHolder.classList.add('expanded');
         expandHolder.style.maxHeight = fullHeight + 'px';
@@ -56,32 +56,40 @@
       });
     }
 
-    function switchContent(newNode) {
-      isAnimating = true;
-      const oldHeight = expandHolder.scrollHeight;
-      expandHolder.style.maxHeight = oldHeight + 'px';
+function switchContent(newNode) {
+  if (isAnimating) return;
+  isAnimating = true;
 
-      requestAnimationFrame(() => {
-        // expandHolder.style.maxHeight = '0px';
+  const duration = 500;
 
-        setTimeout(() => {
-          if (activeNode) {
-            document.getElementById('templates').appendChild(activeNode);
-          }
+  // Collapse current content
+  const startHeight = expandHolder.scrollHeight;
+  expandHolder.style.maxHeight = startHeight + 'px';
 
-          activeNode = newNode;
-          expandHolder.appendChild(newNode);
+  requestAnimationFrame(() => {
+    expandHolder.style.maxHeight = '0px';
+  });
 
-          const newHeight = newNode.scrollHeight;
-          expandHolder.style.maxHeight = '0px';
-
-          requestAnimationFrame(() => {
-            expandHolder.style.maxHeight = newHeight + 'px';
-          });
-
-          setTimeout(() => {
-            isAnimating = false;
-          }, 500);
-        }, 500);
-      });
+  setTimeout(() => {
+    // Move old content back
+    if (activeNode) {
+      document.getElementById('templates').appendChild(activeNode);
     }
+
+    activeNode = newNode;
+    expandHolder.appendChild(newNode);
+
+    // Force reflow so height is accurate
+    expandHolder.style.maxHeight = '0px';
+    expandHolder.offsetHeight;
+
+    const targetHeight = expandHolder.scrollHeight;
+
+    expandHolder.style.maxHeight = targetHeight + 'px';
+
+    setTimeout(() => {
+      expandHolder.style.maxHeight = 'none';
+      isAnimating = false;
+    }, duration);
+  }, duration);
+}

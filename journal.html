@@ -1,82 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script src="scroll.js"></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>myaxd-journal</title>
-  <meta name="author" content="Mya A" />
-  <meta name="description" content="myaxd website projects" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Mya A" />
+  <meta name="description" content="myaxd website vlog" />
+  <title>myaxd-journal</title>
 
-  <!--Add icon to website title-->
+  <!-- Icon -->
   <link rel="icon" href="images/pinkkuma.png" type="image/x-icon" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="journalstyle.css" type="text/css" />
-  <link rel="stylesheet" href="journalmobilestyle.css" type="text/css" /> 
-  <!--Fonts-->
-  <!--Roboto Mono-->
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!--Dynapuff-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bonbon&family=Tektur:wght@400..900&family=Butterfly+Kids&family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&display=swap&family=Lexend+Giga:wght@100..900&display=swap&family=Major+Mono+Display&display=swap&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="scroll.js" defer></script>
 </head>
 
-
 <body>
+  <img id="floating-image" src="images/pinkkuma.png" style="position: fixed; pointer-events: none; width: 30px; z-index:9999;" />
 
-  <img id="floating-image" src="images/pinkkuma.png"
-       style="position: fixed; pointer-events: none; width: 30px; z-index:9999;"></img>
-  
   <div class="header"></div>
-  <div class="wrapper">
 
-
-    <div class="main">
-        <div id="box1" class="box">
-        
-            <div class="titlediv">
-                <div class="framediv">
-                    <h1 id="title">Journal</h1>
+  <main class="main-content">
+      <fieldset>
+        <legend>
+          <h1 class="section-title" onclick="location.href='index.html'">home  </h1>
+          <h1 class="section-title" onclick="location.href='hobbies.html'">hobbies  </h1>
+          <h1 class="section-title" onclick="location.href='gallery.html'">gallery  </h1>
+          <h1 class="section-title" onclick="location.href='projects.html'">projects  </h1>
+          <h1 class="section-title" onclick="location.href='cafe.html'"><p class="nav-label">cafe  </p></h1>
+          <h1 class="section-title" onclick="location.href='journal.html'"><p class="nav-label">journal  </p></h1>
+        </legend>
+        <div class="video-links">
+          <div class="construction">
+                  <img src="images/lovecatgif.gif" alt="">
+                  <img src="images/lovecatgif.gif" alt="">
+                  <img src="images/lovecatgif.gif" alt="">
+                  <img src="images/lovecatgif.gif" alt="">
+                  <img src="images/lovecatgif.gif" alt="">
+                  <img src="images/lovecatgif.gif" alt="">
+                  <br><br>
+                  <p>journal under construction...</p>
                 </div>
-            </div>
-            <div class="navigation">
-                <img id="home-image"    src="images/girl.gif" />
-                <img id="projects-image"src="images/eevee.gif" />
-                <img id="hobbies-image" src="images/kuma.gif" />
-                <img id="gallery-image" src="images/greenkitty.gif" />
-                <img id="misc-image"    src="images/spinningmiffy.gif" />
+          <div class="video-year">
+            <strong>SEPT 2025</strong>
+            <!-- <p><a href="" target="iframe">9.1</a></p> -->
+          </div>
 
-                <div class="nav-buttons">
-                <button class="nav-button" onclick="location.href='index.html'">Home</button>
-                <button class="nav-button" onclick="location.href='hobbies.html'">Hobbies</button>
-                <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
-                <button class="nav-button" onclick="location.href='projects.html'">Projects</button>
-                <button class="nav-button" onclick="location.href='journal.html'">Journal</button>
-                </div>
+          <div class="video-year">
+            <strong>SPET 2025</strong>
+            <!-- <p><a href="" target="iframe">9.1</a></p> -->
+          </div>
 
-                <div class="lace-divider"></div>
-            </div>
+          <div class="video-year">
+            <strong>SEPT 2025</strong>
+            <!-- <p><a href="" target="iframe">9.1</a></p> -->
+          </div>
         </div>
 
-        <div id="journal-main" class="box">
-          
+        <hr>
+
+        <div class="video-player-wrapper">
+          <!-- <iframe name="iframe" width="525" height="295" src="" title="video player" frameborder="0" allowfullscreen></iframe> -->
         </div>
-            
-      <div class="main-footer">
-        <div class="main-footer-div"></div>
-      </div>
-    </div>
 
-  </div>
+        <hr>
 
-  <div class="footer"></div>
+        <footer class="video-footer">
+          <div class="video-category">
+            <strong>SKATING</strong>
+            <!-- <p><a href="" target="iframe">JUNE</a></p> -->
+          </div>
 
-  <script src ="cursor.js"></script>
-  <script src = "musicdata.js"></script>
-  <script src = "music.js"></script>
-  <script src="scroll.js"></script>
+          <div class="video-category">
+            <strong>RANDOM</strong>
+            <!-- <p><a href="" target="iframe"></a></p> -->
+          </div>
 
+        </footer>
+      </fieldset>
+  </main>
 
+  <script src="cursor.js"></script>
+  <script src="musicdata.js"></script>
+  <script src="music.js"></script>
 </body>
 </html>

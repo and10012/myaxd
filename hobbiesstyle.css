@@ -772,10 +772,34 @@ button.forwardbutton{
   grid-area: 16 / 3 / 20 / 9;
   background: url('images/si2012.png');
   background-size: contain;
+  z-index: 2;
   transform: rotate(2deg);
   margin: 0px 20px 40px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.sipar-2012{
+  margin: 60px;
+  width: 170px;
+}
+
+.koi{
+  grid-area: 19 / 5 / 22 / 7;
+  background: url('images/pearlkoi.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pearl-shell{
+  grid-area: 21 / 6 / 23 / 8;
+  margin-right: 10px;
+  background: url('images/pearlshell.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(-10deg);
 }
 
 .fishbowl{
@@ -789,9 +813,9 @@ button.forwardbutton{
 }
 
 .clipboard{
-  grid-area: 18  / 1 /22 / 6;
-  background: url(images/clipboard.png);
-  margin: 10px 50px;
+  grid-area: 18/ 1 /23 / 6;
+  margin-left: 10px;
+  background: url(images/2012simemo.jpg);
   transform: rotate(-2deg);
   background-size: contain;
   background-repeat: no-repeat; 

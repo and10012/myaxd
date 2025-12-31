@@ -155,7 +155,7 @@
   #hobbies-image,
   #gallery-image,
   #misc-image,
-  #vlog-image {
+  #journal-image {
     position: absolute;
     top: 22px;
     height: 20px;
@@ -168,7 +168,7 @@
   #gallery-image { left: 380px; }
   #projects-image { left: 510px; }
   #misc-image    { left: 620px; }
-  #vlog-image    { left: 740px; }
+  #journal-image    { left: 748px; }
 
   .nav-buttons {
     top: 2px;
