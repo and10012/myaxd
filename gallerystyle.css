@@ -256,8 +256,8 @@ A
     scrollbar-color: #c0c0c0 transparent;
     scrollbar-width: thin; 
     overflow: auto; 
-    grid-template-columns: repeat(3 , 130px);
-    grid-template-rows: repeat(15, 130px);
+    grid-template-columns: repeat(3 , 129px);
+    grid-template-rows: repeat(14, 130px);
   }
 
 
@@ -503,193 +503,293 @@ button.forwardbutton{
 }
 
 #photo1{
-  background: url("images/gallery11.jpg");
+  background: url("images/galleryq.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo2{
-  background: url("images/hobbies2.jpg");
+  background: url("images/gallery11.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo3{
-  background: url("images/gallery20.png");
+  background: url("images/galleryc.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo4{
-  background: url("images/gallery5.jpg");
+  background: url("images/galleryd.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo5{
-  background: url("images/hobbies5.jpg");
+  background: url("images/galleryb.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo6{
-  background: url("images/hobbies6.jpg");
+  background: url("images/galleryf.PNG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo7{
-  background: url("images/gallery1.jpg");
+  background: url("images/galleryg.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo8{
-  background: url("images/gallery2.png");
+  background: url("images/galleryh.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo9{
-  background: url("images/gallery3.png");
+  background: url("images/galleryi.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo10{
-  background: url("images/gallery4.png");
+  background: url("images/galleryj.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo11{
-  background: url("images/hobbies4.jpg");
+  background: url("images/galleryk.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
+
 #photo12{
-  background: url("images/gallery6.jpg");
+  background: url("images/IMG_2323.JPG");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo13{
-  background: url("images/gallery7.jpg");
+  background: url("images/hobbies2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo14{
-  background: url("images/gallery8.jpg");
+  background: url("images/gallery20.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo15{
-  background: url("images/gallery9.png");
+  background: url("images/gallery5.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo16{
-  background: url("images/gallery10.jpg");
+  background: url("images/hobbies5.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo17{
-  background: url("images/hobbies1.jpg");
+  background: url("images/hobbies6.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo18{
-  background: url("images/gallery12.jpg");
+  background: url("images/gallery1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo19{
-  background: url("images/gallery13.jpg");
+  background: url("images/gallery2.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo20{
-  background: url("images/gallery14.jpg");
+  background: url("images/gallery3.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo21{
-  background: url("images/gallery15.jpg");
+  background: url("images/gallery4.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo22{
-  background: url("images/gallery16.jpg");
+  background: url("images/hobbies4.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo23{
-  background: url("images/gallery17.jpg");
+  background: url("images/gallery6.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo24{
-  background: url("images/gallery18.jpg");
+  background: url("images/gallery7.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo25{
-  background: url("images/gallery19.jpg");
+  background: url("images/gallery8.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo26{
-  background: url("images/hobbies3.jpg");
+  background: url("images/gallery9.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
 
 #photo27{
+  background: url("images/gallery10.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo28{
+  background: url("images/hobbies1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo29{
+  background: url("images/gallery12.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo30{
+  background: url("images/gallery13.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo31{
+  background: url("images/gallery14.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo32{
+  background: url("images/gallery15.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo33{
+  background: url("images/gallery16.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo34{
+  background: url("images/gallery17.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo35{
+  background: url("images/gallery18.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo36{
+  background: url("images/gallery19.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo37{
+  background: url("images/hobbies3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo38{
   background: url("images/gallery21.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
 }
+
+#photo39{
+  background: url("images/gallerym.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo40{
+  background: url("images/galleryr.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
+#photo41{
+  background: url("images/galleryo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+}
+
 
 #post-profile{
   align-items: center;

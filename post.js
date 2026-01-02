@@ -30,7 +30,21 @@ document.addEventListener("DOMContentLoaded", () => {
     { photoId: 'photo24', postId: 'post24' },
     { photoId: 'photo25', postId: 'post25' },
     { photoId: 'photo26', postId: 'post26' },
-    { photoId: 'photo27', postId: 'post27' }
+    { photoId: 'photo27', postId: 'post27' },
+    { photoId: 'photo28', postId: 'post28' },
+    { photoId: 'photo29', postId: 'post29' },
+    { photoId: 'photo30', postId: 'post30' },
+    { photoId: 'photo31', postId: 'post31' },
+    { photoId: 'photo32', postId: 'post32' },
+    { photoId: 'photo33', postId: 'post33' },
+    { photoId: 'photo34', postId: 'post34' },
+    { photoId: 'photo35', postId: 'post35' },
+    { photoId: 'photo36', postId: 'post36' },
+    { photoId: 'photo37', postId: 'post37' },
+    { photoId: 'photo38', postId: 'post38' },
+    { photoId: 'photo39', postId: 'post39' },
+    { photoId: 'photo40', postId: 'post40' },
+    { photoId: 'photo41', postId: 'post41' }
   ];
   
 
